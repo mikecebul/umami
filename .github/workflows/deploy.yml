@@ -28,5 +28,5 @@ jobs:
             mikecebul/umami:latest
           platforms: linux/amd64
           build-args: |
-            ALLOWED_FRAME_URLS: ${{ secrets.ALLOWED_FRAME_URLS }}
-            DATABASE_TYPE: postgresql
+            ALLOWED_FRAME_URLS=${{ secrets.ALLOWED_FRAME_URLS }}
+            DATABASE_TYPE=postgresql
