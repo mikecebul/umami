@@ -8,7 +8,6 @@ jobs:
   build-and-push-dockerfile-image:
     runs-on: ubuntu-latest
     environment: production
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -30,3 +29,4 @@ jobs:
           platforms: linux/amd64
           build-args: |
             ALLOWED_FRAME_URLS: ${{ secrets.ALLOWED_FRAME_URLS }}
+            DATABASE_TYPE: postgresql
