@@ -25,7 +25,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            mikecebul/umami:latest
+            mikecebul/umami-mikecebul:latest
           platforms: linux/amd64
           build-args: |
             ALLOWED_FRAME_URLS=${{ secrets.ALLOWED_FRAME_URLS }}
