@@ -13,7 +13,7 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-ARG ALLOWED_FRAME_URLS="basesmi.org cvxjrgolf.org mikecebul.com midrugtest.com"
+ARG ALLOWED_FRAME_URLS="www.basesmi.org www.cvxjrgolf.org www.mikecebul.com www.midrugtest.com"
 ARG DATABASE_TYPE="postgresql"
 
 ENV NEXT_TELEMETRY_DISABLED=1
